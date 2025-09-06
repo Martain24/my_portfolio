@@ -3,7 +3,7 @@ from fastapi import status
 
 router = APIRouter()
 
-@router.get("/{expression}")
+@router.get("/")
 def evaluate_expression(expression: str):
     try:
         result = eval(expression)
